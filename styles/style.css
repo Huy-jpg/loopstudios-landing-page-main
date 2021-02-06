@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: url("/images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    position: relative;
+    height: 894px;
+  }
+  header .logo-section {
+    padding: 60px 0px 0px 40px;
+    z-index: 2;
+  }
+  header .logo-section .logo {
+    cursor: pointer;
+  }
+  header .logo-active {
+    position: fixed;
+  }
+  header .nav-section .hamburger, header .nav-section .close-ham {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  header .nav-section .close-ham {
+    right: 5.4%;
+    position: fixed;
+    top: 6.5%;
+  }
+  header .nav-section .not-ready {
+    display: none;
+  }
+  header .nav-section .navbar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  header .nav-section .navbar .nav-list {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  header .nav-section .navbar .nav-list .nav-link {
+    list-style: none;
+    margin: 20px 0px 35px 40px;
+  }
+  header .nav-section .navbar .nav-list .nav-link a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 27px;
+    letter-spacing: 2px;
+    opacity: 0;
+  }
+  header .nav-section .navbar-active {
+    pointer-events: auto;
+    background: black;
+  }
+  header .box-title {
+    margin: 40% 0px 0px 40px;
+    border: 2px solid white;
+    width: 450px;
+    height: 300px;
+  }
+  header .box-title .title {
+    padding: 40px 25px 0px 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+  }
+  header .box-title-active {
+    margin: 0;
+  }
+}
+
+.lead {
+  margin-top: 10em;
+}
+
+.lead .background-img {
+  padding: 0 40px;
+}
+
+.lead .lead-header {
+  text-align: center;
+  margin: 30px auto 0 auto;
+  width: 290px;
+}
+
+.lead .lead-header .lead-head {
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.lead .lead-header .paragraph {
+  color: #8c8c8c;
+  font-weight: bold;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.creation-section, .footer {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creation-section .creation-header .creation-head, .footer .creation-header .creation-head {
+  text-transform: uppercase;
+}
+
+.creation-section .creations, .footer .creations {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[autofit];
+      grid-template-columns: repeat(autofit, minmax(400px, 1fr));
+  margin-top: 20px;
+}
+
+.creation-section .creations .cards, .footer .creations .cards {
+  margin: 0px 0px 20px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.creation-section .creations .cards::before, .footer .creations .cards::before {
+  content: '';
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.301)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.301), rgba(255, 255, 255, 0));
+}
+
+.creation-section .creations .cards .card-image, .footer .creations .cards .card-image {
+  height: 150px;
+}
+
+.creation-section .creations .cards .card, .footer .creations .cards .card {
+  width: 160px;
+  position: absolute;
+  left: 5%;
+  bottom: 19%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.creation-section .creations .button, .footer .creations .button {
+  margin: 40px auto 50px auto;
+}
+
+.creation-section .creations .button .btn, .footer .creations .button .btn {
+  text-transform: uppercase;
+  font-size: 23px;
+  letter-spacing: 6px;
+  padding: 10px 40px;
+  background: none;
+  font-family: "Alata", sans-serif;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.footer {
+  background: black;
+  width: 100vw;
+  height: 500px;
+  color: white;
+}
+
+.footer .footer-logo {
+  margin: 60px 0 10px 0;
+}
+
+.footer .infos {
+  list-style: none;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.footer .infos a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer .copyrighted-section {
+  margin-top: 25px;
+}
+
+.footer .copyrighted-section .icon-section {
+  text-align: center;
+}
+
+.footer .copyrighted-section .icon-section .icon-container {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.footer .copyrighted-section .copyright {
+  margin-top: 15px;
+}
+
+.footer .copyrighted-section .copyright .copyright-msg {
+  color: #8c8c8c;
+}
+/*# sourceMappingURL=style.css.map */
