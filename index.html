@@ -10,6 +10,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <style>
+    .desktop-image{
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <!-- THE HEADER -->
@@ -28,11 +34,11 @@
         <nav class="navbar">
           <!-- NAVIGATION LINKS -->
           <ul class="nav-list">
-            <li class="nav-link"><a href="#"> About</a></li>
-            <li class="nav-link"><a href="#"> Careers </a></li>
-            <li class="nav-link"><a href="#"> Events </a></li>
-            <li class="nav-link"><a href="#"> Products </a></li>
-            <li class="nav-link"><a href="#"> Support </a></li>
+            <li class="nav-link"><a href="#" class="links"> About</a></li>
+            <li class="nav-link"><a href="#" class="links"> Careers </a></li>
+            <li class="nav-link"><a href="#" class="links"> Events </a></li>
+            <li class="nav-link"><a href="#" class="links"> Products </a></li>
+            <li class="nav-link"><a href="#" class="links"> Support </a></li>
           </ul>
         </nav>
       </div>
@@ -48,7 +54,7 @@
   <div class="lead">
     <!-- LEAD BACKGROUND -->
     <div class="background-img">
-      <img src="images/desktop/image-interactive.jpg" alt="VR headset" height="300">
+      <img src="images/desktop/image-interactive.jpg" alt="VR headset" class="vr-img">
     </div>
 
     <!-- LEAD HEADER -->
@@ -74,42 +80,59 @@
     <div class="creations">
       <div class="cards">
         <img src="images/mobile/image-deep-earth.jpg" alt="Deep Earth" class="card-image">
+
+        <img src="images/desktop/image-deep-earth.jpg" alt="Deep Earth" class="desktop-image">
         <span class="card">Deep earth</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-night-arcade.jpg" alt="Night Arcade" class="card-image">
+
+        <img src="images/desktop/image-night-arcade.jpg" alt="Night Arcade" class="desktop-image">
         <span class="card">Night arcade</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-soccer-team.jpg" alt="Soccer Team" class="card-image">
+
+        <img src="images/desktop/image-soccer-team.jpg" alt="Soccer Team" class="desktop-image">
         <span class="card">Soccer team VR</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-grid.jpg" alt="The Grid" class="card-image">
-        <span class="card">The grid</span>
+
+        <img src="images/desktop/image-grid.jpg" alt="The Grid" class="desktop-image">
+        <span class="card">The <br>grid</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-from-above.jpg" alt="From Above" class="card-image">
+
+        <img src="images/desktop/image-from-above.jpg" alt="From Above" class="desktop-image">
         <span class="card">From up above VR</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis" class="card-image">
+
+        <img src="images/desktop/image-pocket-borealis.jpg" alt="Pocket Borealis" class="desktop-image">
         <span class="card">Pocket borealis</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-curiosity.jpg" alt="Curiosity" class="card-image">
+
+        <img src="images/desktop/image-curiosity.jpg" alt="Curiosity" class="desktop-image">
         <span class="card">The curiosity</span>
       </div>
 
       <div class="cards">
         <img src="images/mobile/image-fisheye.jpg" alt="Fisheye" class="card-image">
+
+        <img src="images/desktop/image-fisheye.jpg" alt="Fisheye" class="desktop-image">
         <span class="card">Make it fisheye</span>
+      </div>
     </div>
 
     <!-- SEE ALL BUTTON -->
@@ -120,18 +143,20 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    <div class="footer-logo">
-      <img src="images/logo.svg" alt="logo">
-    </div>
+    <div class="descript">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
 
-    <div class="info-lists">
-      <ul class="lists">
-        <li class="infos"><a href="#">About</a></li>
-        <li class="infos"><a href="#">Careers</a></li>
-        <li class="infos"><a href="#">Events</a></li>
-        <li class="infos"><a href="#">Products</a></li>
-        <li class="infos"><a href="#">Support</a></li>
-      </ul>
+      <div class="info-lists">
+        <ul class="lists">
+          <li class="infos"><a href="#">About</a></li>
+          <li class="infos"><a href="#">Careers</a></li>
+          <li class="infos"><a href="#">Events</a></li>
+          <li class="infos"><a href="#">Products</a></li>
+          <li class="infos"><a href="#">Support</a></li>
+        </ul>
+      </div>  
     </div>
 
     <!-- ICON SECTION -->
