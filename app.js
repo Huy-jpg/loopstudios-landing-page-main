@@ -5,6 +5,7 @@ const openHam = document.querySelector('.hamburger'),
           headerBox = document.querySelector('.box-title'),
           links = document.querySelectorAll('.nav-link a');
 
+// Hamburger bars
 openHam.addEventListener('click', () =>{
   openHam.classList.add('not-ready')
   closeHam.classList.remove('not-ready')
@@ -26,3 +27,6 @@ closeHam.addEventListener('click', () =>{
     link.style.opacity = 0;
   });
 })
+
+// Page animation
+gsap.to('.box-title', {duration: 2, xPercent: -100, opacity: 0})
