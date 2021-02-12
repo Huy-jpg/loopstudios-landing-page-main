@@ -29,4 +29,28 @@ closeHam.addEventListener('click', () =>{
 })
 
 // Page animation
-gsap.to('.box-title', {duration: 2, xPercent: -100, opacity: 0})
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline({defaults: {duration: 1, opacity: 0}});
+
+tl.from('.box-title', {yPercent: 100})
+  .from('.background-img', {xPercent: -20}, '-=.7')
+
+gsap.from('.lead-header', {
+  scrollTrigger: {
+    trigger: '.lead-header',
+    start: 'top 80%',
+  },
+  duration: .7,
+  opacity: 0,
+  xPercent: 40
+})
+
+gsap.from('.creation-section', {
+  scrollTrigger:{
+    trigger: '.creation-section',
+    start: 'top 80%',
+  },
+  duration: 1,
+  opacity: 0,
+  yPercent: 20
+})

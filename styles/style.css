@@ -12,7 +12,7 @@ body {
 
 header {
   position: relative;
-  background: url("/images/mobile/image-hero.jpg");
+  background: url("/loopstudios-landing-page-main/images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 50em;
@@ -244,7 +244,7 @@ header {
 .footer {
   background: black;
   width: 100vw;
-  height: 55vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +328,7 @@ header {
 
 @media (min-width: 1020px) {
   header {
-    background: url("/images/desktop/image-hero.jpg");
+    background: url("/loopstudios-landing-page-main/images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -516,12 +516,6 @@ header {
   }
   .footer .infos:hover::before {
     width: 30%;
-  }
-}
-
-@media (max-height: 695px) {
-  .box-title {
-    margin-top: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
